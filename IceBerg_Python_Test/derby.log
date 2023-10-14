@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Oct 13 15:03:27 IST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-2862-36aa-000002d30200 
+on database directory /Users/Sachin179087/Library/CloudStorage/OneDrive-EXLService.com(I)Pvt.Ltd/Documents/Training/Iceberg/IceBerg_Python_Test/metastore_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 
+Loaded from file:/opt/homebrew/Cellar/apache-spark/3.5.0/libexec/jars/derby-10.14.2.0.jar
+java.vendor=Homebrew
+java.runtime.version=17.0.8.1+0
+user.dir=/Users/Sachin179087/Library/CloudStorage/OneDrive-EXLService.com(I)Pvt.Ltd/Documents/Training/Iceberg/IceBerg_Python_Test
+os.name=Mac OS X
+os.arch=aarch64
+os.version=13.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
