@@ -23,7 +23,8 @@ conf.set("spark.sql.catalog.glue","org.apache.iceberg.spark.SparkCatalog")
 conf.set("spark.sql.catalog.glue.warehouse","s3a://ap-south-1-snowflake-bucket-aws-s3/spark-iceberg/")
 conf.set("spark.sql.catalog.glue.catalog-impl","org.apache.iceberg.aws.glue.GlueCatalog")
 conf.set("park.sql.catalog.glue.io-impl","org.apache.iceberg.aws.s3.S3FileIO")
-
+#conf.set('spark.hadoop.fs.s3a.access.key', AWS_ACCESS_KEY)
+#conf.set('spark.hadoop.fs.s3a.secret.key', AWS_SECRET_KEY)
 
 spark = SparkSession.builder.config(conf=conf).getOrCreate()
 #df = spark.read.format("parquet").load("s3a://ap-south-1-snowflake-bucket-aws-s3/iceberg-storage/")
@@ -46,11 +47,11 @@ spark = SparkSession.builder.config(conf=conf).getOrCreate()
 
 
 #s3://snowflake-bucket-aws-s3/data/Orders.csv
-#orderdf = spark.read.csv("s3a://snowflake-bucket-aws-s3/data/Orders.csv",header='true',inferSchema='true')
-#orderdf.show(10)
-#orderdf.printSchema()
-#orderdf.createOrReplaceTempView("sampleView")
-#df=spark.sql("INSERT INTO TABLE glue.default.orders  SELECT * FROM sampleView")
+orderdf = spark.read.csv("s3a://snowflake-bucket-aws-s3/data/Orders.csv",header='true',inferSchema='true')
+orderdf.show(10)
+orderdf.printSchema()
+orderdf.createOrReplaceTempView("sampleView")
+df=spark.sql("INSERT INTO TABLE glue.default.orders  SELECT * FROM sampleView")
 
 #spark.sql("select * from glue.default.orders;").show(10)
 
