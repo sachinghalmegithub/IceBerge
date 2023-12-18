@@ -8,8 +8,8 @@ conf = SparkConf().setAppName("MyApp").setMaster("local[2]")\
     .set("spark.executor.memory", "2g")
 
 
-conf.set("spark.hadoop.fs.s3a.access.key", "AKIAUS5FBZKAW67QZPEA")
-conf.set("spark.hadoop.fs.s3a.secret.key", "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")
+conf.set("spark.hadoop.fs.s3a.access.key", "<>")
+conf.set("spark.hadoop.fs.s3a.secret.key", "<>")
 conf.set("spark.some.config.option","true")
 conf.set("spark.jars.packages", "org.apache.hadoop:hadoop-aws:3.3.4")
 

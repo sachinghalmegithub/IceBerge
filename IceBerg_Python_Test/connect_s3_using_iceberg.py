@@ -9,8 +9,8 @@ from pyspark.conf import SparkConf
 
 # Create a SparkConf object
 conf = SparkConf().setAppName("MyApp").setMaster("local[2]")
-#conf.set("spark.hadoop.fs.s3a.access.key", "AKIAUS5FBZKAW67QZPEA")
-#conf.set("spark.hadoop.fs.s3a.secret.key", "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")
+#conf.set("spark.hadoop.fs.s3a.access.key", "<>")
+#conf.set("spark.hadoop.fs.s3a.secret.key", "<>")
 
 # Working Packages
 #conf.set('spark.jars.packages', 'org.apache.iceberg:iceberg-spark-runtime-3.5_2.12:1.4.0,software.amazon.awssdk:bundle:2.17.178,software.amazon.awssdk:url-connection-client:2.17.178')
